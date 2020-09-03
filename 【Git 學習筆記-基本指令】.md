@@ -1,69 +1,69 @@
 # 【Git 學習筆記-基本指令】
 
-# **§ Git 工具安裝 §**
+## **§ Git 工具安裝 §**
 
 - [Git For Windows](https://git-scm.com/)
 
-# **§ Git 基本設定 §**
+## **§ Git 基本設定 §**
 
 ※ `git config --help` 完整指令說明
 
 ### Git 執行環境中，三個層級差異
 
 - 系統層級
-    - System-Level Configuration：整台電腦所有使用者
+  - System-Level Configuration：整台電腦所有使用者
 
-        ```go
-        git config --system --list
-        ```
+    ```go
+    git config --system --list
+    ```
 
-        - 預設路徑：C:\Program Files\Git\etc\gitconfig
+      - 預設路徑：C:\Program Files\Git\etc\gitconfig
 
             ![%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled.png](%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled.png)
 
 - 使用者層級
-    - User-Level Configuration：當前登入的使用者
+  - User-Level Configuration：當前登入的使用者
 
-        ```go
-        git config --global --list
-        ```
+    ```go
+    git config --global --list
+    ```
 
-        - 預設路徑：C:\Users\<使用者帳號>admin\.gitconfig
+    - 預設路徑：C:\Users\<使用者帳號>admin\.gitconfig
 
             ![%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%201.png](%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%201.png)
 
-        - 常用指令：
-            - user區段下的name & email參數，初次使用Git一定要設定。
+    - 常用指令：
+      - user區段下的name & email參數，初次使用Git一定要設定。
 
-                ```go
-                git config --global user.name "Eli"
-                git config --global user.email "eli@uisco.com.tw"
-                ```
+      ```go
+      git config --global user.name "Eli"
+      git config --global user.email "eli@uisco.com.tw"
+      ```
 
-            - Windows環境中，開啟 core.autocrlf選項，讓commit 的檔案沒有CR字元。
+      - Windows環境中，開啟 core.autocrlf選項，讓commit 的檔案沒有CR字元。
 
-                ※純Windows開發環境，可以設定為False;跨平台建議設定為True
+           ※純Windows開發環境，可以設定為False;跨平台建議設定為True
 
-                ```go
-                git config --global core.autocrlf true
-                ```
+      ```go
+      git config --global core.autocrlf true
+      ```
 
-            - 自動訂正打錯的參數
+      - 自動訂正打錯的參數
 
-                ex:git statsu —> git status
+          ex:git statsu —> git status
 
-                ```go
-                git config --global help.autocorrect 1
-                ```
+      ```go
+      git config --global help.autocorrect 1
+      ```
 
 - 儲存區層級
-    - Repository-Level Configuration：
+  - Repository-Level Configuration：
 
-        ```go
+    ```go
         git config --list
-        ```
+    ```
 
-        - 預設路徑：<Git儲存區>UISCO_Eli\.git\config
+    - 預設路徑：<Git儲存區>UISCO_Eli\.git\config
 
             ![%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%202.png](%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%202.png)
 
@@ -78,11 +78,11 @@
     ```
 
 - 直接至檔案更改值：
-    - **系統層級**預設路徑：C:\Program Files\Git\etc\gitconfig
-    - **使用者層級**預設路徑：C:\Users\<使用者帳號>admin\.gitconfig
-    - **儲存區層級**預設路徑：<Git儲存區>UISCO_Eli\.git\config
+  - **系統層級**預設路徑：C:\Program Files\Git\etc\gitconfig
+  - **使用者層級**預設路徑：C:\Users\<使用者帳號>admin\.gitconfig
+  - **儲存區層級**預設路徑：<Git儲存區>UISCO_Eli\.git\config
 
-# **§ Git 版本控管工具(指令) §**
+## **§ Git 版本控管工具(指令) §**
 
 ### 取得 **Git 軟體版本**
 
@@ -146,10 +146,10 @@
 
     ![%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%206.png](%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%206.png)
 
-    - 【commit】：亂碼(SHA1 Hash)，每個版本唯一值。
-    - 【Author】：此字提交之user.name & user.email
-    - 【Date】：提交該版本之時間資訊
-    - 【訊息】：提交該版本的`commit -m "紀錄訊息內容"`
+  - 【commit】：亂碼(SHA1 Hash)，每個版本唯一值。
+  - 【Author】：此字提交之user.name & user.email
+  - 【Date】：提交該版本之時間資訊
+  - 【訊息】：提交該版本的`commit -m "紀錄訊息內容"`
 - 詳細顯示新增的檔案、新增與刪除的行數...ect。
 
     ```go
@@ -399,19 +399,19 @@
         ```
 
 - 將差異以文件匯出
-    - 將比對差異以【.txt】檔顯示，可配合補充指令。
+  - 將比對差異以【.txt】檔顯示，可配合補充指令。
 
-        ```go
-        git diff > *.txt
-        ```
+    ```go
+    git diff > *.txt
+    ```
 
         ![%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2029.png](%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2029.png)
 
-    - 將 **<commit-id>** 與 **HEAD** 差異以【壓縮檔】輸出。
+  - 將 **<commit-id>** 與 **HEAD** 差異以【壓縮檔】輸出。
 
-        ```go
-        git archive --format=zip -output=*.zip HEAD $(git diff --name-only [commit-id] HEAD)
-        ```
+    ```go
+    git archive --format=zip -output=*.zip HEAD $(git diff --name-only [commit-id] HEAD)
+    ```
 
 ### 變更檔名
 
