@@ -157,7 +157,7 @@
     git log --stat
     ```
 
-    ![%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%207.png](%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%207.png)
+    ![text](./figures/01/7.png)
 
 - 簡略顯示每次版本更新之內容：
 
@@ -165,7 +165,7 @@
     git log --pretty=oneline
     ```
 
-    ![%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%208.png](%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%208.png)
+    ![text](./figures/01/8.png)
 
 ### 更新檔案
 
@@ -175,7 +175,7 @@
     git add -u
     ```
 
-    ![%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%209.png](%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%209.png)
+    ![text](./figures/01/9.png)
 
 ### 刪除檔案
 
@@ -188,7 +188,7 @@
     git add -u <FILENAME>
     ```
 
-    ![%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2010.png](%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2010.png)
+    ![text](./figures/01/10.png)
 
 - 利用 Git 指令刪除
 
@@ -198,7 +198,7 @@
     git rm <FILENAME>
     ```
 
-    ![%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2011.png](%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2011.png)
+    ![text](./figures/01/11.png)
 
 ### 重置檔案狀態
 
@@ -233,13 +233,13 @@
     git clean -f   // 執行清除動作，將要清理的檔案逐一刪除 
     ```
 
-    ![%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2012.png](%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2012.png)
+    ![text](./figures/01/12.png)
 
 ### 同時有檔案新增、檔案變更之控制
 
 - 假設【變更 aaa.txt】且【新增 bbb.txt】，當執行 `git status` 時：
 
-    ![%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2013.png](%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2013.png)
+    ![text](./figures/01/13.png)
 
     【not staged】：aaa.txt
 
@@ -249,39 +249,39 @@
 
     兩個檔案皆呈現綠色字樣
 
-    ![%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2014.png](%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2014.png)
+    ![text](./figures/01/14.png)
 
 - 只想將【變更檔案】加入追蹤則使用 `git add -u`
 
     僅變更檔案呈現綠色字樣
 
-    ![%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2015.png](%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2015.png)
+    ![text](./figures/01/15.png)
 
 - 只想將【新增檔案】加入追蹤則使用 `git add bbb.txt`
 
     僅新增檔案呈現綠色字樣
 
-    ![%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2016.png](%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2016.png)
+    ![text](./figures/01/16.png)
 
 - 若想將剛剛所有加入追蹤之執行取消則使用 `gut reser HEAD`
 
     會顯示取消變動之項目並呈現紅色字樣
 
-    ![%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2017.png](%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2017.png)
+    ![text](./figures/01/17.png)
 
 - 若想將 bbb.txt 重置回Untracked狀態則使用 `git reset HEAD b.txt`
 
-    ![%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2018.png](%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2018.png)
+    ![text](./figures/01/18.png)
 
 - 若講將已aaa為名的所有檔案都重置則使用 `git reset HEAD aaa.*`
 
-    ![%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2019.png](%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2019.png)
+    ![text](./figures/01/19.png)
 
 - 若想取消aaa.txt所有變更之內容，回復到原本版本庫中之內容則使用 `git checkout --aaa.txt`
 
     註：檔案中新增的內容會一並移除
 
-    ![%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2020.png](%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2020.png)
+    ![text](./figures/01/20.png)
 
 ---
 
@@ -309,7 +309,7 @@
         git diff
         ```
 
-        ![%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2021.png](%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2021.png)
+        ![text](./figures/01/21.png)
 
     2. 比對 **工作目錄** 與 **已加入暫存區(staged)** 全部檔案差異
 
