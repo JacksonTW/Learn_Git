@@ -17,9 +17,9 @@
     git config --system --list
     ```
 
-      - 預設路徑：C:\Program Files\Git\etc\gitconfig
+    - 預設路徑：C:\Program Files\Git\etc\gitconfig
 
-            ![%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled.png](%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled.png)
+        ![gitconfig畫面](./figures/01/0.png)
 
 - 使用者層級
   - User-Level Configuration：當前登入的使用者
@@ -30,7 +30,7 @@
 
     - 預設路徑：C:\Users\<使用者帳號>admin\.gitconfig
 
-            ![%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%201.png](%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%201.png)
+        ![test](./figures/01/1.png)
 
     - 常用指令：
       - user區段下的name & email參數，初次使用Git一定要設定。
@@ -65,7 +65,7 @@
 
     - 預設路徑：<Git儲存區>UISCO_Eli\.git\config
 
-            ![%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%202.png](%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%202.png)
+        ![text](./figures/01/2.png)
 
 ### **Git 執行環境中，層級套用順序**
 
@@ -119,11 +119,11 @@
 
 - 若新增一個檔案(aaa.txt)，執行 `git status`會得到以下畫面：
 
-    ![%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%203.png](%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%203.png)
+    ![text](./figures/01/3.png)
 
 - 接著執行 `git add.`後，得到以下畫面：
 
-    ![%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%204.png](%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%204.png)
+    ![text](./figures/01/4.png)
 
 ### 提交變更使 **Git 送至 儲存區(Repository)**
 
@@ -134,7 +134,8 @@
     git commit -m "<版本記錄訊息>"
     ```
 
-    ![%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%205.png](%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%205.png)
+    ![text](./figures/01/5.png)
+
 
 ### 查看**歷史紀錄**
 
@@ -144,7 +145,7 @@
     git log
     ```
 
-    ![%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%206.png](%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%206.png)
+    ![text](./figures/01/6.png)
 
   - 【commit】：亂碼(SHA1 Hash)，每個版本唯一值。
   - 【Author】：此字提交之user.name & user.email
