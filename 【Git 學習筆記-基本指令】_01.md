@@ -19,7 +19,7 @@
 
     - 預設路徑：C:\Program Files\Git\etc\gitconfig
 
-        ![gitconfig畫面](./figures/01/0.png)
+    ![gitconfig畫面](./figures/01/0.png)
 
 - 使用者層級
   - User-Level Configuration：當前登入的使用者
@@ -30,7 +30,7 @@
 
     - 預設路徑：C:\Users\<使用者帳號>admin\.gitconfig
 
-        ![test](./figures/01/1.png)
+    ![test](./figures/01/1.png)
 
     - 常用指令：
       - user區段下的name & email參數，初次使用Git一定要設定。
@@ -65,22 +65,22 @@
 
     - 預設路徑：<Git儲存區>UISCO_Eli\.git\config
 
-        ![text](./figures/01/2.png)
+    ![text](./figures/01/2.png)
 
 ### **Git 執行環境中，層級套用順序**
 
-- **儲存區層級** (優先權最高) > **使用者層級** > **系統層級** (優先權最低) ****
+- **儲存區層級** (優先權最高) > **使用者層級** > **系統層級** (優先權最低)
 - 刪除特定選項的值 (從設定檔中刪除)：
 
     ```go
-    git config --unset user.email             (刪除**儲存區層級**的設定值)
-    git config --global --unset user.email    (刪除**使用者層級**的設定值**)**
+    git config --unset user.email           (刪除 儲存區層級 的設定值)
+    git config --global --unset user.email  (刪除 使用者層級 的設定值)
     ```
 
 - 直接至檔案更改值：
   - **系統層級**預設路徑：C:\Program Files\Git\etc\gitconfig
-  - **使用者層級**預設路徑：C:\Users\<使用者帳號>admin\.gitconfig
-  - **儲存區層級**預設路徑：<Git儲存區>UISCO_Eli\.git\config
+  - **使用者層級**預設路徑：C:\Users\<使用者帳號>admin\ .gitconfig
+  - **儲存區層級**預設路徑：<Git儲存區>UISCO_Eli\ .git\config
 
 ## **§ Git 版本控管工具(指令) §**
 
@@ -136,7 +136,6 @@
 
     ![text](./figures/01/5.png)
 
-
 ### 查看**歷史紀錄**
 
 - 當查詢紀錄時，重要欄位如下：
@@ -150,7 +149,7 @@
   - 【commit】：亂碼(SHA1 Hash)，每個版本唯一值。
   - 【Author】：此字提交之user.name & user.email
   - 【Date】：提交該版本之時間資訊
-  - 【訊息】：提交該版本的`commit -m "紀錄訊息內容"`
+  - 【訊息】：提交該版本的`commit -m "<紀錄訊息內容>"`
 - 詳細顯示新增的檔案、新增與刪除的行數...ect。
 
     ```go
@@ -319,7 +318,7 @@
         git diff --cached
         ```
 
-        ![%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2022.png](%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2022.png)
+        ![text](./figures/01/22.png)
 
     3. 比對 **工作目錄** 與 **尚未進入暫存區** <filename>檔案差異
 
@@ -333,7 +332,7 @@
         git diff <commit-id>
         ```
 
-        ![%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2023.png](%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2023.png)
+        ![text](./figures/01/23.png)
 
     5. 比對 **兩版本之間(<commit-id>)** 差異
 
@@ -341,7 +340,7 @@
         git diff <old commit-id> <new commit-id>
         ```
 
-        ![%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2024.png](%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2024.png)
+        ![text](./figures/01/24.png)
 
     6. 比對 兩分支之間(<branches>) 差異 
 
@@ -361,7 +360,7 @@
         git diff HEAD^..HEAD
         ```
 
-        ![%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2025.png](%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2025.png)
+        ![text](./figures/01/25.png)
 
     2. 檢視更新(簡略資訊)
 
@@ -369,7 +368,7 @@
         git diff ---stat
         ```
 
-        ![%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2026.png](%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2026.png)
+        ![text](./figures/01/26.png)
 
     3. 顯示 **更動檔案名稱列表** 於更新訊息後方
 
@@ -377,7 +376,7 @@
         git diff --name-only
         ```
 
-        ![%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2027.png](%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2027.png)
+        ![text](./figures/01/27.png)
 
     4. 顯示 **新增、刪除、變更的檔案列表**
 
@@ -385,7 +384,7 @@
         git diff --name-status
         ```
 
-        ![%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2028.png](%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2028.png)
+        ![text](./figures/01/28.png)
 
     5. 顯示 **檔案列表(依照檔案狀態)**
 
@@ -406,7 +405,7 @@
     git diff > *.txt
     ```
 
-        ![%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2029.png](%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2029.png)
+      ![text](./figures/01/29.png)
 
   - 將 **<commit-id>** 與 **HEAD** 差異以【壓縮檔】輸出。
 
@@ -427,9 +426,9 @@
     git add .
     ```
 
-    ![%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2030.png](%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2030.png)
+    ![text](./figures/01/30.png)
 
-    ![%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2031.png](%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2031.png)
+    ![text](./figures/01/31.png)
 
 - 利用 Git 指令修改
 
@@ -439,7 +438,7 @@
     git mv <FILENAME> <新名稱>
     ```
 
-    ![%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2032.png](%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2032.png)
+    ![text](./figures/01/32.png)
 
 ### 重新提交版本
 
@@ -449,9 +448,9 @@
     git commit --amend
     ```
 
-    ![%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2033.png](%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2033.png)
+    ![text](./figures/01/33.png)
 
-    ![%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2034.png](%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2034.png)
+    ![text](./figures/01/34.png)
 
     **註**：版本數量、時間沒有變動，但commit 的內容作出了改變。
 
@@ -465,7 +464,7 @@
 git reset HEAD~1
 ```
 
-![%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2035.png](%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2035.png)
+![text](./figures/01/35.png)
 
 利用 reflog 來查詢所有紀錄，找到要復原的版本後利用SHA-1復原。
 
@@ -474,7 +473,7 @@ git reflog
 git reset <SHA-1 Hast>
 ```
 
-![%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2036.png](%E3%80%90Git%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E3%80%91%20797e69e596b247b19e28f1b4c6e2f5f4/Untitled%2036.png)
+![text](./figures/01/36.png)
 
 ---
 
