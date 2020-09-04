@@ -229,7 +229,7 @@
     ```go
     git clean
     git clean -n   // 列出耀清空的檔案清單
-    git clean -f   // 執行清除動作，將要清理的檔案逐一刪除 
+    git clean -f   // 執行清除動作，將要清理的檔案逐一刪除
     ```
 
     ![text](./figures/01/12.png)
@@ -289,7 +289,7 @@
 - 【**staged**】：該檔案可以使用 `git commit` 會納入版本庫中
 - 【**not staged**】：該檔案有變更但使用 `git commit` 不會納入版本庫中
 - 【**untracked**】：該檔案尚未被追蹤，所以使用 `git commit` 也不會被納入
-- `**git add .`** ：將所有檔案(新增或變更)標示，若使用 `git commit` 時會納入
+- **`git add .`** ：將所有檔案(新增或變更)標示，若使用 `git commit` 時會納入
 - **`git reset HEAD`** ：取消所有檔案的標示
 - **`git status`** ：檢查該工作目錄之檔案狀態
 - **`git add -u .`** ：僅標示「變更」的檔案(曾被tracked過的)
@@ -320,13 +320,13 @@
 
         ![text](./figures/01/22.png)
 
-    3. 比對 **工作目錄** 與 **尚未進入暫存區** <filename>檔案差異
+    3. 比對 **工作目錄** 與 **尚未進入暫存區** <file_name>檔案差異
 
         ```go
         git diff <filename>
         ```
 
-    4. 比對 **所在分支的<COMMIT-ID>** 與 **HEAD版** 差異
+    4. 比對 **所在分支的<commit_id>** 與 **HEAD版** 差異
 
         ```go
         git diff <commit-id>
@@ -334,7 +334,7 @@
 
         ![text](./figures/01/23.png)
 
-    5. 比對 **兩版本之間(<commit-id>)** 差異
+    5. 比對 **兩版本之間(<commit_id>)** 差異
 
         ```go
         git diff <old commit-id> <new commit-id>
@@ -342,7 +342,7 @@
 
         ![text](./figures/01/24.png)
 
-    6. 比對 兩分支之間(<branches>) 差異 
+    6. 比對 **兩分支之間 <_branches>** 差異
 
         註：中間加入[..]避免檔案名稱跟分支名稱重複
 
@@ -362,7 +362,7 @@
 
         ![text](./figures/01/25.png)
 
-    2. 檢視更新(簡略資訊)
+    2. 檢視 **更新(簡略資訊)**
 
         ```go
         git diff ---stat
@@ -395,7 +395,7 @@
         M = modified
         R = renamed
         T = changed
-        D = delet
+        D = delete
         ```
 
 - 將差異以文件匯出
@@ -407,7 +407,7 @@
 
       ![text](./figures/01/29.png)
 
-  - 將 **<commit-id>** 與 **HEAD** 差異以【壓縮檔】輸出。
+  - 將 **<commit_id>** 與 **HEAD** 差異以【壓縮檔】輸出。
 
     ```go
     git archive --format=zip -output=*.zip HEAD $(git diff --name-only [commit-id] HEAD)
@@ -435,7 +435,7 @@
     免去兩步驟的更名直接一步完成檔名變更
 
     ```go
-    git mv <FILENAME> <新名稱>
+    git mv <filename> <新名稱>
     ```
 
     ![text](./figures/01/32.png)
@@ -452,7 +452,7 @@
 
     ![text](./figures/01/34.png)
 
-    **註**：版本數量、時間沒有變動，但commit 的內容作出了改變。
+    **註**：版本數量、時間沒有變動，但 commit的內容 做出了改變。
 
 ### 復原操作過程中的所有變更
 
@@ -466,7 +466,7 @@ git reset HEAD~1
 
 ![text](./figures/01/35.png)
 
-利用 reflog 來查詢所有紀錄，找到要復原的版本後利用SHA-1復原。
+利用 `reflog` 來查詢所有紀錄，找到要復原的版本後利用SHA-1復原。
 
 ```go
 git reflog
@@ -478,6 +478,10 @@ git reset <SHA-1 Hast>
 ---
 
 ### ~~重置版本/復原版本(待整理)~~
+
+---
+
+### 參考資料
 
 [p.com/post/2013/08/18/Learning-Git-Part-1-Installation-Options-Tool-Usage-on-Local](https://blog.miniasp.com/post/2013/08/18/Learning-Git-Part-1-Installation-Options-Tool-Usage-on-Local)
 
